@@ -3,8 +3,8 @@ kind: Route
 metadata:
   creationTimestamp: null
   labels:
-    app: bgd
-  name: bgd
+    app: bgd-demo
+  name: bgd-demo
   namespace: bgd-demo
 spec:
   host: ""
@@ -12,7 +12,7 @@ spec:
     targetPort: 8080
   to:
     kind: Service
-    name: bgd
+    name: bgd-demo
     weight: 100
 status:
   ingress:
