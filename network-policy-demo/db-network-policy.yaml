@@ -14,7 +14,8 @@ spec:
   ingress:
   - from:
     - podSelector:
-        deployment: backend
+        matchLabels:
+          deployment: backend
     ports:
     - protocol: TCP
       port: 27017
