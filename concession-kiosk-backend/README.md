@@ -11,4 +11,4 @@ oc new-app https://github.com/jankleinert/concession-kiosk-backend --name backen
 
 To link the frontend and backend components, you'll provide the backend service name (backend) and port (8080) to the frontend as environment variables.
 
-
+Refer to https://developers.redhat.com/articles/deploy-a-NodeJS-app-OpenShift# for more information
