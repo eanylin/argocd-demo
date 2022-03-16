@@ -5,9 +5,7 @@ metadata:
   name: frontend-policy
   namespace: concession-kiosk-web
 spec:
-  podSelector:
-    matchLabels:
-      deployment: frontend
+  podSelector: {}
   policyTypes:
   - Ingress
   ingress:
@@ -15,6 +13,3 @@ spec:
     - namespaceSelector:
         matchLabels:
           network.openshift.io/policy-group: ingress
-    ports:
-    - protocol: TCP
-      port: 8080
