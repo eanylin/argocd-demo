@@ -12,13 +12,9 @@ spec:
   - Ingress
   ingress:
   - from:
-     - namespaceSelector:
-        matchLabels:
-          name: concession-kiosk-app
-  - from:
     - podSelector:
         matchLabels:
-          deployment: backend
+          deployment: backend.concession-kiosk-app.svc.cluster.local
     ports:
     - protocol: TCP
       port: 27017
