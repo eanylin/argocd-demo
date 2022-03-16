@@ -14,7 +14,7 @@ spec:
   - from:
     - namespaceSelector:
         matchLabels:
-          name: concession-kiosk-app
+          project: concession-kiosk-app
     - podSelector:
         matchLabels:
           deployment: backend

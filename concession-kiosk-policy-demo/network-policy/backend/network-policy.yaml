@@ -10,26 +10,14 @@ spec:
       deployment: backend
   policyTypes:
   - Ingress
-  - Egress
   ingress:
   - from:
     - namespaceSelector:
         matchLabels:
-          name: concession-kiosk-web
+          project: concession-kiosk-web
     - podSelector:
         matchLabels:
           deployment: frontend
     ports:
     - protocol: TCP
       port: 8080
-  egress:
-  - to:
-    - namespaceSelector:
-        matchLabels:
-          name: concession-kiosk-db
-    - podSelector:
-        matchLabels:
-          role: mongodb
-    ports:
-    - protocol: TCP
-      port: 27017
