@@ -6,8 +6,6 @@ metadata:
   namespace: concession-kiosk-app
 spec:
   podSelector: {}
-  policyTypes:
-  - Ingress
   ingress:
   - from:
     - namespaceSelector:
