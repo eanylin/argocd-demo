@@ -12,7 +12,7 @@ spec:
   - Ingress
   ingress:
   - from:
-     - namespaceSelector:
+    - namespaceSelector:
         matchLabels:
           name: concession-kiosk-web
     - podSelector:
