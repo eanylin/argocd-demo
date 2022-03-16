@@ -5,7 +5,9 @@ metadata:
   name: db-policy
   namespace: concession-kiosk-db
 spec:
-  podSelector: {}
+  podSelector:
+    matchLabels:
+      role: mongodb
   policyTypes:
   - Ingress
   ingress:
@@ -13,3 +15,9 @@ spec:
     - namespaceSelector:
         matchLabels:
           name: concession-kiosk-app
+    - podSelector:
+        matchLabels:
+          deployment: backend
+    ports:
+    - protocol: TCP
+      port: 27017
