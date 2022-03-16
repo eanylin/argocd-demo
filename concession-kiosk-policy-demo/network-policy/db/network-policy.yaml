@@ -5,9 +5,7 @@ metadata:
   name: db-policy
   namespace: concession-kiosk-db
 spec:
-  podSelector:
-    matchLabels:
-      role: mongodb
+  podSelector: {}
   policyTypes:
   - Ingress
   ingress:
