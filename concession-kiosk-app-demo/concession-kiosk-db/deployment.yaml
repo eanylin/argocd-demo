@@ -1,0 +1,40 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    role: mongodb
+  name: mongodb
+  namespace: concession-kiosk-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      role: mongodb
+  template:
+    metadata:
+      labels:
+        role: mongodb
+    spec:
+      containers:
+      - image: bitnami/mongodb:latest
+        name: mongodb
+        env:
+        - name: MONGODB_USERNAME
+          value: user1
+        - name: MONGODB_PASSWORD
+          value: password123
+        - name: MONGODB_DATABASE
+          value: sampledb
+        - name: MONGODB_ROOT_PASSWORD
+          value: password123
+        ports:
+        - name: mongodb
+          containerPort: 27017
+        volumeMounts:
+          - name: mongodb
+            mountPath: /data/db
+      volumes:
+        - name: mongodb
+          persistentVolumeClaim:
+            claimName: mongodb-storage
