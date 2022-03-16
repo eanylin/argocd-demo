@@ -3,15 +3,18 @@ apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   name: db-policy
-  namespace: concession-kiosk
+  namespace: concession-kiosk-db
 spec:
   podSelector:
     matchLabels:
       role: mongodb
   policyTypes:
   - Ingress
-  - Egress
   ingress:
+  - from:
+     - namespaceSelector:
+        matchLabels:
+          name: concession-kiosk-app
   - from:
     - podSelector:
         matchLabels:
