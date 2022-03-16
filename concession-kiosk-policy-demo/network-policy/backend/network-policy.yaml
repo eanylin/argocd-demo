@@ -12,6 +12,9 @@ spec:
   - Ingress
   ingress:
   - from:
+     - namespaceSelector:
+        matchLabels:
+          name: concession-kiosk-web
     - podSelector:
         matchLabels:
           deployment: frontend.concession-kiosk-web.svc.cluster.local
