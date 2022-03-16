@@ -2,12 +2,12 @@
 apiVersion: v1
 kind: ResourceQuota
 metadata:
-  name: object-counts
+  name: app-resource-limit
   namespace: concession-kiosk-app
 spec:
   hard:
     configmaps: "10"
     persistentvolumeclaims: "0"
     pods: "5"
-    secrets: "10"
+    secrets: "20"
     services: "10"
