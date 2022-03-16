@@ -15,9 +15,3 @@ spec:
     - namespaceSelector:
         matchLabels:
           name: concession-kiosk-app
-    - podSelector:
-        matchLabels:
-          deployment: backend.concession-kiosk-app.svc.cluster.local
-    ports:
-    - protocol: TCP
-      port: 27017
