@@ -5,9 +5,7 @@ metadata:
   name: backend-policy
   namespace: concession-kiosk-app
 spec:
-  podSelector:
-    matchLabels:
-      deployment: backend
+  podSelector: {}
   policyTypes:
   - Ingress
   ingress:
