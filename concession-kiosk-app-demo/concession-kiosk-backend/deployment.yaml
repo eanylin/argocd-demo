@@ -15,14 +15,12 @@ spec:
       deployment: backend
   template:
     metadata:
-      annotations:
-        alpha.image.policy.openshift.io/resolve-names: '*'
       labels:
         deployment: backend
     spec:
       containers:
         - name: backend
-          image: backend:latest
+          image: quay.io/julin/concession-kiosk-app:1.0
           ports:
             - containerPort: 8080
               protocol: TCP
