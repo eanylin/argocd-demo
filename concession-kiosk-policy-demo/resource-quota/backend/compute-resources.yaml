@@ -6,7 +6,7 @@ metadata:
   namespace: concession-kiosk-app
 spec:
   hard:
-    configmaps: "10"
+    configmaps: "20"
     persistentvolumeclaims: "0"
     pods: "5"
     secrets: "20"
