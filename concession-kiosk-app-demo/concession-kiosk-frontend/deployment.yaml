@@ -15,14 +15,12 @@ spec:
       deployment: frontend
   template:
     metadata:
-      annotations:
-        alpha.image.policy.openshift.io/resolve-names: '*'
       labels:
         deployment: frontend
     spec:
       containers:
         - name: frontend
-          image: frontend:latest
+          image: quay.io/julin/concession-kiosk-web:1.0
           ports:
             - containerPort: 8080
               protocol: TCP
