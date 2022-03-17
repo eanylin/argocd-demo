@@ -8,6 +8,6 @@ spec:
   hard:
     configmaps: "20"
     persistentvolumeclaims: "0"
-    pods: "5"
+    pods: "10"
     secrets: "20"
     services: "10"
