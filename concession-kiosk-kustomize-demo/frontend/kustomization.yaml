@@ -1,5 +1,5 @@
 bases:
-- ../../base
+- ../base
 namespace: concession-kiosk-web
 patchesStrategicMerge:
 - namespace.yaml
