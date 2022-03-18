@@ -2,8 +2,7 @@
 apiVersion: v1
 kind: ResourceQuota
 metadata:
-  name: app-resource-limit
-  namespace: concession-kiosk-app
+  name: concession-kiosk-web-resource-limit
 spec:
   hard:
     configmaps: "20"
