@@ -1,5 +1,0 @@
-bases:
-- ../../base
-namespace: concession-kiosk-db
-patchesStrategicMerge:
-- namespace.yaml
