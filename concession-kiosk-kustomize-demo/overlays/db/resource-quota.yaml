@@ -5,4 +5,4 @@ metadata:
   name: concession-kiosk-resource-limit
 spec:
   hard:
-    pods: "15"
+    persistentvolumeclaims: "10"

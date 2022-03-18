@@ -2,3 +2,5 @@ resources:
 - namespace.yaml
 - ../../base
 namespace: concession-kiosk-db
+patchesStrategicMerge:
+- resource-quota.yaml
