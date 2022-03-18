@@ -1,4 +1,4 @@
 resources:
-- frontend
-- backend
-- db
+- base/frontend
+- base/backend
+- base/db

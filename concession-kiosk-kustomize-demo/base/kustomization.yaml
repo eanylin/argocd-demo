@@ -1,3 +1,5 @@
 resources:
-- resource-limits.yaml
 - default-deny-ingress.yaml
+- network-policy.yaml
+- resource-limits.yaml
+- resource-quota.yaml
