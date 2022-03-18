@@ -1,3 +1,0 @@
-resources:
-- resource-limits.yaml
-- default-deny-ingress.yaml
