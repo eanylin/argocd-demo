@@ -8,8 +8,6 @@ spec:
   podSelector:
     matchLabels:
       deployment: backend
-  policyTypes:
-  - Ingress
   ingress:
   - from:
     - namespaceSelector:

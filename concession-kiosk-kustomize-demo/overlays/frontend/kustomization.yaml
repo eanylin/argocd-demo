@@ -1,6 +1,4 @@
 resources:
 - namespace.yaml
-- network-policy.yaml
-- resource-quota.yaml
 - ../../base
 namespace: concession-kiosk-app
