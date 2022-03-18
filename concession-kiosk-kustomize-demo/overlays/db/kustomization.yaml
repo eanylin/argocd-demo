@@ -1,6 +1,8 @@
-resources:
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+bases:
+- ../../base
+patchesStrategicMerge:
 - namespace.yaml
 - network-policy.yaml
 - resource-quota.yaml
-- ../../base
-namespace: concession-kiosk-app
