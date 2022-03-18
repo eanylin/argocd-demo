@@ -1,7 +1,0 @@
----
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: concession-kiosk-app
-  labels:
-    project: concession-kiosk-app
