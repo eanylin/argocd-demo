@@ -5,7 +5,7 @@ metadata:
   name: concession-kiosk-resource-limit
 spec:
   hard:
-    configmaps: "20"
+    configmaps: "30"
     persistentvolumeclaims: "0"
     pods: "10"
     secrets: "20"
