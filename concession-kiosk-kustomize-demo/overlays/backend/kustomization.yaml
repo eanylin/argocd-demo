@@ -4,5 +4,3 @@ bases:
 - ../../base
 patchesStrategicMerge:
 - namespace.yaml
-- network-policy.yaml
-- resource-quota.yaml

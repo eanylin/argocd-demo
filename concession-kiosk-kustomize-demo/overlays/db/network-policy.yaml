@@ -2,19 +2,22 @@
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: backend-policy
+  name: db-policy
+  namespace: concession-kiosk-db
 spec:
   podSelector:
     matchLabels:
-      deployment: backend
+      role: mongodb
+  policyTypes:
+  - Ingress
   ingress:
   - from:
     - namespaceSelector:
         matchLabels:
-          project: concession-kiosk-web
+          project: concession-kiosk-app
     - podSelector:
         matchLabels:
-          deployment: frontend
+          deployment: backend
     ports:
     - protocol: TCP
-      port: 8080
+      port: 27017
