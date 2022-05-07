@@ -1,0 +1,6 @@
+resources:
+- namespace.yaml
+- ../../base
+namespace: app2-app
+patchesStrategicMerge:
+- network-policy.yaml

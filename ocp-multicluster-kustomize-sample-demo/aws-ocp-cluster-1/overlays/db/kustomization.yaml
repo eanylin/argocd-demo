@@ -1,0 +1,7 @@
+resources:
+- namespace.yaml
+- ../../base
+namespace: app1-db
+patchesStrategicMerge:
+- network-policy.yaml
+- resource-quota.yaml

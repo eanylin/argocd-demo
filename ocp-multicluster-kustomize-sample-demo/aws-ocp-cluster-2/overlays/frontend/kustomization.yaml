@@ -1,0 +1,7 @@
+resources:
+- namespace.yaml
+- ../../base
+namespace: concession-kiosk-web
+patchesStrategicMerge:
+- network-policy.yaml
+- resource-quota.yaml
