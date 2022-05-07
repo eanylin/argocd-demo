@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ResourceQuota
 metadata:
-  name: cluster1-app-resource-limit
+  name: app2-resource-limit
 spec:
   hard:
     configmaps: "50"
