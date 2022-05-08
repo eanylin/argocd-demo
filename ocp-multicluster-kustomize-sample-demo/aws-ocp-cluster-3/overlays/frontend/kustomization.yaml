@@ -1,7 +1,7 @@
 resources:
 - namespace.yaml
 - ../../base
-namespace: app2-web
+namespace: app3-web
 patchesStrategicMerge:
 - network-policy.yaml
 - resource-quota.yaml
