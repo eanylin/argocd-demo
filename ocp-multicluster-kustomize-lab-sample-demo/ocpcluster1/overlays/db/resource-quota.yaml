@@ -1,0 +1,8 @@
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: app1-resource-limit
+spec:
+  hard:
+    persistentvolumeclaims: "10"

@@ -1,0 +1,20 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allowed-ingress-network-policy
+spec:
+  podSelector:
+    matchLabels:
+      deployment: backend
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          project: concession-kiosk-web
+    - podSelector:
+        matchLabels:
+          deployment: frontend
+    ports:
+    - protocol: TCP
+      port: 8080
