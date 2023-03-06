@@ -23,6 +23,6 @@ spec:
         name: bgd-demo
         env:
         - name: COLOR
-          value: "blue"
+          value: "green"
         resources: {}
 ---
